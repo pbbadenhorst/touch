@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touch", "touch\touch.csproj", "{F661388F-0947-4539-B039-AC9E1D2568E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Touch", "src\touch\Touch.csproj", "{EEC22659-CD95-47E7-A3B6-EC9206F55973}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5D9D4678-DE44-478E-B5AB-C31932F35BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Touch.Tests", "tests\touch.Tests\Touch.Tests.csproj", "{C559F28C-438C-4660-9830-165A077F896F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{8484AEB3-B691-4BE6-87C5-DD2BF032E6D6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F661388F-0947-4539-B039-AC9E1D2568E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F661388F-0947-4539-B039-AC9E1D2568E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F661388F-0947-4539-B039-AC9E1D2568E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F661388F-0947-4539-B039-AC9E1D2568E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC22659-CD95-47E7-A3B6-EC9206F55973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC22659-CD95-47E7-A3B6-EC9206F55973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC22659-CD95-47E7-A3B6-EC9206F55973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC22659-CD95-47E7-A3B6-EC9206F55973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C559F28C-438C-4660-9830-165A077F896F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C559F28C-438C-4660-9830-165A077F896F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C559F28C-438C-4660-9830-165A077F896F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C559F28C-438C-4660-9830-165A077F896F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C559F28C-438C-4660-9830-165A077F896F} = {5D9D4678-DE44-478E-B5AB-C31932F35BDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9242E4CE-FE4F-4613-BF2F-0EB6B1C64581}
